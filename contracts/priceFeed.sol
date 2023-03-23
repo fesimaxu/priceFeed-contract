@@ -34,7 +34,7 @@ contract PriceConsumerV3 {
             /*uint startedAt*/,
             /*uint timeStamp*/,
             /*uint80 answeredInRound*/
-        ) = priceFeed.latestRoundData();
+        ) = dynamicPriceFeed.latestRoundData();
         return price;
     }
 }
